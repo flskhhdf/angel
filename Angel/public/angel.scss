@@ -1,0 +1,189 @@
+html{
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    word-break: keep-all;
+    font-family: 'JalnanGothic';
+    letter-spacing: 0.15rem;
+}
+
+h3{
+    font-size: 4.5rem;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+p{
+    font-size: 1.8rem;
+}
+
+div{
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1400px;
+    min-width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-content{
+    margin: auto;
+}
+
+.nav-bar{
+    max-width: 1200px;
+    height: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.6rem;
+    li{
+        list-style: none; 
+        padding: 10px;
+        border: 0px solid black;   
+    }
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+    :hover{
+        cursor: pointer;
+    }
+}
+
+#logo{
+    width: 15rem;
+}
+
+%main-box{
+    height: 50rem;
+    opacity: 0.9;
+    h1{
+        margin-top: 1rem;
+        margin-bottom: 8rem;
+    }
+    margin-bottom: 1.5rem;
+}
+
+.main-box1{
+    background: url("/angel_img/home/daniel1.jpg") no-repeat;
+    background-size: cover;
+    @extend %main-box;
+    div{
+        color:white;
+        padding: 60px;
+    }
+}
+
+.main-box2{
+    background: url("/angel_img/home/chuttersnap4.jpg") no-repeat;
+    background-size: cover;
+    .main-box2-content{
+        display: flex;
+        height: 100%;
+    }
+    @extend %main-box;
+}
+
+.main-box3{
+    background: url("/angel_img/home/doublescale.png") no-repeat;
+    background-size: cover;
+    @extend %main-box;
+    div{
+        color:white;
+        padding: 60px;
+    }
+}
+
+.main-box4{
+    background-color: rgb(59, 77, 72);
+    height: 80rem;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.main-box5{
+    background-color: rgb(59, 77, 72);
+    height: 90rem;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+%rank-box{
+    width: 70%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2.5rem;
+    color: black;
+    background-color: white;
+    margin-top: 5rem;
+    border-radius: 5px;
+}
+
+.main-popularplans-rank-box{
+    @extend %rank-box;
+    text-align: left;
+    align-items: center;
+    .popularplans-rank-box-text{
+        width: 60%;
+    }
+    .popularplans-rank-box-price{
+        width: 20%;
+        text-align: right;
+        margin-right: 5rem;
+    }
+}
+
+.main-rateplan-rank-box{
+    @extend %rank-box;
+    .rateplan-rank-box-text{
+        width: 70%;
+        text-align: left;
+    }
+    .rateplan-rank-box-price{
+        width: 30%;
+        text-align: left;
+    }
+}
+
+footer{
+    width: 100%;
+    background-color: rgb(195, 201, 203);
+    height: 25rem;
+    text-align: center;
+    img{
+        margin-top: 5rem;
+    }
+    div{
+        text-align: left;
+        line-height: 3rem;
+        margin-left: 10rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+}
+
+.btn{
+    padding: 1.5rem;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: 'JalnanGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
